@@ -23,8 +23,8 @@ module.exports = {
     'complexity': ['error', 20],
     'consistent-return': 0,
     'linebreak-style': 0,
-    'max-lines': ['error', { max: 1000, skipComments: true }],
-    'max-statements': ['error', 40, { ignoreTopLevelFunctions: true }],
+    'max-lines': ['error', { 'max': 1000, 'skipComments': true }],
+    'max-statements': ['error', 40, { 'ignoreTopLevelFunctions': true }],
     'no-case-declarations': 0,
     'no-continue': 0,
     'no-plusplus': 0,
@@ -37,7 +37,7 @@ module.exports = {
     'vars-on-top': 0,
     'import/prefer-default-export': 0,
     'import/no-extraneous-dependencies': ['error', {
-      devDependencies: [
+      'devDependencies': [
         '.*rc.js',
         '*.config.js',
         '**/*.test.js',
@@ -59,19 +59,27 @@ module.exports = {
       'exports': 'always-multiline',
       'functions': 'always-multiline'
     }],
-    'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'always'}],
-    'sort-keys': ['error', 'asc', {natural: true}],
+    'react/jsx-max-props-per-line': [1, { 'maximum': 1, 'when': 'always'}],
+    'sort-keys': ['error', 'asc', {'natural': true}],
     'react/jsx-props-no-spreading': 'off',
     'max-len': ['error', { 'code': 100, 'tabWidth': 2 }],
     'react/forbid-prop-types': 'off',
     'react/jsx-key': 2,
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-indent": [2, 2, { "checkAttributes": false, "indentLogicalExpressions": true }],
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-curly-spacing": [2, "never"],
+    "react/jsx-curly-newline": [2, {
+      "multiline": "forbid",
+      "singleline": "forbid"
+    }],
+    'no-console': ['warn', { 'allow': ['warn', 'error'] }],
     'react/jsx-sort-props': ['error', {
       'ignoreCase': true,
       'reservedFirst': true
     }],
     'sort-destructure-keys/sort-destructure-keys': 2,
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
-  }
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'import/no-unresolved': ['error', { 'ignore': ['^react$'] }]  }
 };

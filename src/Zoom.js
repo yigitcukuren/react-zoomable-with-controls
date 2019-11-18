@@ -87,23 +87,21 @@ const Zoom = ({
           { children }
         </div>
       </div>
-      {
-        showControls
-        && <div className={classNames(controlsClass, controlsClassName)}>
-          <button
-            onClick={resetZoom}
-            type="button">Reset
-          </button>
-          <button
-            onClick={decreaseZoom}
-            type="button">Decrease
-          </button>
-          <button
-            onClick={increaseZoom}
-            type="button">Increase
-          </button>
-        </div>
-      }
+      {showControls
+      && <div className={classNames(controlsClass, controlsClassName)}>
+        <button
+          onClick={resetZoom}
+          type="button">Reset
+        </button>
+        <button
+          onClick={decreaseZoom}
+          type="button">Decrease
+        </button>
+        <button
+          onClick={increaseZoom}
+          type="button">Increase
+        </button>
+      </div>}
     </Fragment>
   );
 };
