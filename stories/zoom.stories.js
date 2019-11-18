@@ -13,3 +13,5 @@ export const withAnImage = () => {
     </Zoom>
   );
 };
+
+export const withoutChildren = () => <Zoom/>;
