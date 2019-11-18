@@ -18,7 +18,9 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -34,7 +36,9 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "@storybook/react": "^5.2.6",
     "@svgr/rollup": "^4.3.3",
+    "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
