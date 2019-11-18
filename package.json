@@ -1,6 +1,6 @@
 {
   "name": "react-zoomable-with-controls",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "Make your components zoomable with zoom controls.",
   "author": "yigitcukuren",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "prepare": "yarn run build",
     "lint": "eslint src",
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook",
+    "semantic-release": "semantic-release",
+    "commit": "yarn run git-cz"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -36,9 +38,11 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
+    "@commitlint/prompt": "^8.2.0",
     "@storybook/react": "^5.2.6",
     "@svgr/rollup": "^4.3.3",
     "babel-loader": "^8.0.6",
+    "commitizen": "^4.0.3",
     "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -55,7 +59,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-url": "^3.0.0"
+    "rollup-plugin-url": "^3.0.0",
+    "semantic-release": "^15.13.31"
   },
   "files": [
     "dist"

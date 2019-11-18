@@ -2,3 +2,14 @@ language: node_js
 node_js:
   - 9
   - 8
+
+jobs:
+include:
+  - stage: install
+    script: yarn
+  - stage: lint
+    script: yarn lint
+  - stage: test
+    script: yarn test
+  - stage: deploy
+    script: npx semantic-release
