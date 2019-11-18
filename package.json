@@ -1,6 +1,6 @@
 {
   "name": "react-zoomable-with-controls",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make your components zoomable with zoom controls.",
   "author": "yigitcukuren",
   "license": "MIT",
@@ -17,9 +17,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "prepare": "yarn run build"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
