@@ -38,7 +38,6 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
-    "@commitlint/prompt": "^8.2.0",
     "@storybook/react": "^5.2.6",
     "@svgr/rollup": "^4.3.3",
     "babel-loader": "^8.0.6",

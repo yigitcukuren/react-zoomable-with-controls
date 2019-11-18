@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - 10
-
 jobs:
 include:
   - stage: install
@@ -12,3 +11,5 @@ include:
     script: yarn test
   - stage: deploy
     script: npx semantic-release
+env:
+  - YARN_GPG=no
