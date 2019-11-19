@@ -3,7 +3,7 @@ export const classNames = (...args) => {
 };
 
 export const throwError = () => {
-  throw new TypeError('You need to specify a zoomable element/component.');
+  throw new TypeError('You need to specify a zoomable component.');
 };
 
 export const getStyles = boundingClientRect => {
